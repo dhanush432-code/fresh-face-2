@@ -5,7 +5,7 @@ import Appointment from '@/models/Appointment';
 import Stylist from '@/models/Stylist';
 import ServiceItem from '@/models/ServiceItem';
 import { getServerSession } from 'next-auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 import { authOptions } from '@/lib/auth';
 
 export async function PUT(req: Request, { params }: { params: { id: string } }) {

@@ -7,7 +7,7 @@ import ProductBrand from '@/models/ProductBrand';
 import ProductSubCategory from '@/models/ProductSubCategory';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 
 // Define the expected structure of a row from the Excel file
 interface ProductImportRow {

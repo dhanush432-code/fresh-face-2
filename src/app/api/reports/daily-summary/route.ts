@@ -5,7 +5,7 @@ import DayEndReport from '@/models/DayEndReport';
 import Expense from '@/models/Expense';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 
 export async function GET(request: NextRequest) {
   try {

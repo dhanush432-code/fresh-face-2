@@ -7,7 +7,7 @@ import ShopSetting from '../../../models/ShopSetting';
 import mongoose, { Types } from 'mongoose';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/lib/auth';
-import { PERMISSIONS, hasPermission } from '@/lib/permissions';
+import { PERMISSIONS, hasPermission } from '@/lib/permissionUtils';
 
 // Helper function to validate MongoDB ObjectId string
 const isValidObjectId = (id: string): boolean => mongoose.Types.ObjectId.isValid(id);

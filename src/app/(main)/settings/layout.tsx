@@ -2,7 +2,7 @@
 
 import SettingsNav from './components/SettingsNav';
 import { useSession } from 'next-auth/react';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 
 export default function SettingsLayout({
   children,

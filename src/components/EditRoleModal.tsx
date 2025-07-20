@@ -2,7 +2,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { ALL_PERMISSIONS } from '@/lib/permissions';
+import { ALL_PERMISSIONS } from '@/lib/permissionUtils';
 
 interface EditRoleModalProps {
   isOpen: boolean;

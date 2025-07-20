@@ -5,7 +5,7 @@ import type { IProductBrand } from "@/models/ProductBrand"
 import type { IProductSubCategory } from "@/models/ProductSubCategory"
 import { useEffect, useState, useCallback } from "react"
 import { useSession } from "next-auth/react"
-import { hasPermission, PERMISSIONS } from "@/lib/permissions"
+import { hasPermission, PERMISSIONS } from "@/lib/permissionUtils"
 import {
   PlusIcon,
   PencilIcon,

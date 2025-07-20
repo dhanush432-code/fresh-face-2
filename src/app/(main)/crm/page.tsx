@@ -9,7 +9,7 @@ import { CustomerTable } from './components/CustomerTable';
 import CrmCustomerDetailPanel from './components/CrmCustomerDetailPanel';
 import AddEditCustomerModal from './components/AddEditCustomerModal';
 import { useSession } from 'next-auth/react';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 import CustomerImportModal from '@/components/admin/CustomerImportModal';
 import { toast } from 'react-toastify';
 

@@ -3,7 +3,7 @@ import dbConnect from '@/lib/mongodb';
 import IncentiveRule from '@/models/IncentiveRule';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/lib/auth';
-import { PERMISSIONS, hasPermission } from '@/lib/permissions';
+import { PERMISSIONS, hasPermission } from '@/lib/permissionUtils';
 
 // The interface for our Rule object, ensuring type safety.
 interface IRule {
@@ -96,7 +96,7 @@ export async function POST(request: Request) {
   if (permissionCheck) {
     return NextResponse.json({ success: false, error: permissionCheck.error }, { status: permissionCheck.status });
   }
-  
+
   await dbConnect();
   try {
     const { daily, monthly } = await request.json();

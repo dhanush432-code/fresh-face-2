@@ -5,7 +5,7 @@
 import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import { useSession } from 'next-auth/react';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 import { useReportHistory } from './hooks/useReportHistory';
 import { FilterBar } from './components/FilterBar';
 import { ReportList } from './components/ReportList';

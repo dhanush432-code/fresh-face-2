@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function SignupForm() {
+export default function UserSignupForm() {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

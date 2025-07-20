@@ -10,7 +10,7 @@ import autoTable from 'jspdf-autotable';
 import * as XLSX from 'xlsx';
 
 import { useSession } from 'next-auth/react';
-import { PERMISSIONS, hasPermission } from '@/lib/permissions';
+import { PERMISSIONS, hasPermission } from '@/lib/permissionUtils';
 
 //  Interfaces and Helper Components (NO CHANGES NEEDED HERE)
 

@@ -12,7 +12,7 @@ import Card from '../../../../components/ui/Card';
 import Button from '../../../../components/ui/Button';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isToday, isWeekend, differenceInMinutes, addMonths, subMonths, isEqual, startOfDay } from 'date-fns';
 import { useSession } from 'next-auth/react';
-import { PERMISSIONS, hasPermission } from '../../../../lib/permissions';
+import { PERMISSIONS, hasPermission } from '../../../../lib/permissionUtils';
 
 // Helper function to get initials from a name (Original Function)
 const getInitials = (name: string = ''): string => {

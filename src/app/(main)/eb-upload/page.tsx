@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useCallback, useEffect } from 'react';
 import { useSession } from 'next-auth/react';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 import { 
   ArrowUpTrayIcon, 
   XMarkIcon as XMarkOutlineIcon,
