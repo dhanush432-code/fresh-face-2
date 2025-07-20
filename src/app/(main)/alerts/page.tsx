@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState, useEffect, type FormEvent, type FC, type PropsWithChildren } from "react"
 import { useSession } from "next-auth/react"
-import { hasPermission, PERMISSIONS } from "@/lib/permissionUtils"
+import { hasPermission, PERMISSIONS } from "@/lib/permissions-helper"
 import { Mail, AtSign, X, Plus } from "lucide-react"
 
 // Toast notification component (No change)

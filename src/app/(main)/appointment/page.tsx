@@ -14,7 +14,7 @@ import {
 import { toast } from 'react-toastify';
 import EditAppointmentForm from '@/components/EditAppointmentForm';
 import { useSession } from 'next-auth/react';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
 import { formatDateIST, formatTimeIST } from '@/lib/dateFormatter';
 import { Tooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';

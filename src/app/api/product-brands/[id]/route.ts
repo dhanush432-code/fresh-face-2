@@ -4,7 +4,7 @@ import Brand from '@/models/ProductBrand';
 import SubCategory from '@/models/ProductSubCategory';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
 
 async function checkPermission(permission: string) {
   const session = await getServerSession(authOptions);

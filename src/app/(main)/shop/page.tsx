@@ -7,7 +7,7 @@ import ServiceManager from "@/components/admin/ServiceManager";
 import StylistManager from "@/components/admin/StylistManager";
 import ProductManager from "@/components/admin/ProductManager";
 import { useSession } from "next-auth/react";
-import { hasPermission, PERMISSIONS } from "@/lib/permissionUtils";
+import { hasPermission, PERMISSIONS } from "@/lib/permissions-helper";
 import { BuildingStorefrontIcon, SparklesIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 
 type ShopTab = "products" | "services" | "stylists";

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useSession, signOut } from 'next-auth/react';
 import { useState, useEffect, useMemo } from 'react';
-import { hasAnyPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasAnyPermission, PERMISSIONS } from '@/lib/permissions-helper';
 
 import {
   HomeIcon, CalendarDaysIcon, UserGroupIcon, UsersIcon, CogIcon, Cog6ToothIcon, PowerIcon,

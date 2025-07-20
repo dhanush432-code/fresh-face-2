@@ -2,7 +2,7 @@
 'use client';
 import { useState, useEffect, use } from 'react';
 import { useSession } from 'next-auth/react';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
 import EditUserModal from '@/components/EditUserModal';
 import { PencilIcon, TrashIcon } from 'lucide-react';
 

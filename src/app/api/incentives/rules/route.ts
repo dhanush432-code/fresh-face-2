@@ -3,7 +3,7 @@ import dbConnect from '@/lib/mongodb';
 import IncentiveRule from '@/models/IncentiveRule';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/lib/auth';
-import { PERMISSIONS, hasPermission } from '@/lib/permissionUtils';
+import { PERMISSIONS, hasPermission } from '@/lib/permissions-helper';
 
 // The interface for our Rule object, ensuring type safety.
 interface IRule {

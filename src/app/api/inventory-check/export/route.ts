@@ -5,7 +5,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import dbConnect from '@/lib/dbConnect';
 import InventoryCheck from '@/models/InventoryCheck';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
 import ExcelJS from 'exceljs';
 import { IProduct } from '@/models/Product';
 import { IUser } from '@/models/user';

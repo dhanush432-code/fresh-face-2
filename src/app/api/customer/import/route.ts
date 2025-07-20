@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import connectToDatabase from '@/lib/mongodb'; // Corrected your import from dbConnect
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
 import Customer from '@/models/customermodel';
 
 // --- (1) IMPORT ALL NECESSARY FUNCTIONS ---

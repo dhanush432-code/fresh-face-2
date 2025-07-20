@@ -7,7 +7,7 @@ import InventoryCheck from '@/models/InventoryCheck';
 import Product from '@/models/Product';
 import Invoice from '@/models/invoice';
 import { InventoryManager, InventoryUpdate } from '@/lib/inventoryManager';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
 
 // GET handler to fetch inventory check history
 export async function GET(req: NextRequest) {

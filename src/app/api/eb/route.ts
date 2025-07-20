@@ -5,7 +5,7 @@ import { v2 as cloudinary } from 'cloudinary';
 import { authOptions } from '@/lib/auth';
 import connectToDatabase from '@/lib/mongodb';
 import EBReading, { IHistoryEntry } from '@/models/ebReadings'; // Ensure path is correct
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
 import Setting from '@/models/Setting'; // Ensure path is correct
 
 // --- CLOUDINARY CONFIGURATION ---
