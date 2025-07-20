@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import connectToDatabase from '@/lib/mongodb';
 import Setting, { ILoyaltySettings } from '@/models/Setting';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 import { getServerSession } from 'next-auth';
 
 // Helper to get settings with a fallback default for the UI

@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import dbConnect from '@/lib/dbConnect';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 
 import ServiceCategory from '@/models/ServiceCategory';
 import ServiceSubCategory from '@/models/ServiceSubCategory';

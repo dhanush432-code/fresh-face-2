@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useSession } from 'next-auth/react';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 
 // --- MODIFIED: Add 'Membership' to the navigation array ---
 const settingsNavigation = [

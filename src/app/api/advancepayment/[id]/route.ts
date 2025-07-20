@@ -8,7 +8,7 @@ import Staff from '../../../../models/staff';
 // NEW: Import permission tools
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/lib/auth';
-import { PERMISSIONS, hasPermission } from '@/lib/permissions-helper';
+import { PERMISSIONS, hasPermission } from '@/lib/permissionUtils';
 
 // --- Type Definitions (Consistent with the main route file) ---
 interface PopulatedStaffDetails { /* ... */ }

@@ -4,7 +4,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import connectToDatabase from '@/lib/mongodb';
 import Procurement from '@/models/Procurement';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 
 export async function GET(request: Request) {
   try {

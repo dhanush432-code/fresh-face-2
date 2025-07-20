@@ -7,7 +7,7 @@ import Appointment from '@/models/Appointment';
 import LoyaltyTransaction from '@/models/loyaltyTransaction';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 import * as XLSX from 'xlsx';
 
 // Helper to format a date string or return 'N/A'

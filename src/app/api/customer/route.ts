@@ -7,7 +7,7 @@ import Appointment from '@/models/Appointment';
 import LoyaltyTransaction from '@/models/loyaltyTransaction';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 import mongoose from 'mongoose';
 
 // --- (1) IMPORT THE NEW SEARCH & ENCRYPTION FUNCTIONS ---

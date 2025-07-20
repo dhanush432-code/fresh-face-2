@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, useMemo, useCallback, FC, ChangeEvent } from 'react';
 import { useSession, Session } from 'next-auth/react';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 import { 
     DocumentTextIcon, 
     CurrencyRupeeIcon, 

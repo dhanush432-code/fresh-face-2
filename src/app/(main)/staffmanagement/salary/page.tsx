@@ -17,7 +17,7 @@ import autoTable from 'jspdf-autotable';
 import * as XLSX from 'xlsx';
 
 import { useSession } from 'next-auth/react';
-import { PERMISSIONS, hasPermission } from '../../../../lib/permissions-helper';
+import { PERMISSIONS, hasPermission } from '../../../../lib/permissionUtils';
 
 // --- Interface Definitions ---
 interface SalaryInputs {

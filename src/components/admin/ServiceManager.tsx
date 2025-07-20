@@ -7,7 +7,7 @@ import type { IServiceSubCategory } from "@/models/ServiceSubCategory"
 
 import { useEffect, useState, useCallback } from "react"
 import { useSession } from "next-auth/react"
-import { hasPermission, PERMISSIONS } from "@/lib/permissions-helper"
+import { hasPermission, PERMISSIONS } from "@/lib/permissionUtils"
 import { toast } from "react-toastify"
 
 import {

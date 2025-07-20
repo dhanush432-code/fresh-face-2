@@ -14,7 +14,7 @@ import Button from '../../../../components/ui/Button';
 import { format, parseISO, startOfMonth, endOfMonth, subMonths } from 'date-fns';
 
 import { useSession } from 'next-auth/react';
-import { PERMISSIONS, hasPermission } from '../../../../lib/permissions-helper';
+import { PERMISSIONS, hasPermission } from '../../../../lib/permissionUtils';
 
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';

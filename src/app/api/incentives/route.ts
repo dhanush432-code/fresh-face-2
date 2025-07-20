@@ -4,7 +4,7 @@ import DailySale from '@/models/DailySale';
 import Staff from '@/models/staff';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/lib/auth';
-import { PERMISSIONS, hasPermission } from '@/lib/permissions-helper';
+import { PERMISSIONS, hasPermission } from '@/lib/permissionUtils';
 
 async function checkPermissions(permission: string) {
   const session = await getServerSession(authOptions);

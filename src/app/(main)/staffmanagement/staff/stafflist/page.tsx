@@ -14,7 +14,7 @@ import Button from '../../../../../components/ui/Button';
 
 import { useSession } from 'next-auth/react';
 import Role from '@/models/role'; 
-import { PERMISSIONS, hasPermission } from '@/lib/permissions-helper'; 
+import { PERMISSIONS, hasPermission } from '@/lib/permissionUtils'; 
 
 const DocumentViewerModal: React.FC<{ src: string | null; title: string; onClose: () => void; }> = ({ src, title, onClose }) => {
   if (!src) return null;

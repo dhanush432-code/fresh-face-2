@@ -3,7 +3,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth'; 
 import dbConnect from '@/lib/dbConnect';
 import DayEndReport from '@/models/DayEndReport';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 
 export async function GET(request: NextRequest) {
   try {

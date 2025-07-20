@@ -6,7 +6,7 @@ import Setting from '@/models/Setting';
 import Product from '@/models/Product';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions-helper';
+import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
 
 /**
  * GET handler to fetch all products that are currently low on stock.
