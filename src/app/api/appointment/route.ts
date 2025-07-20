@@ -9,7 +9,7 @@ import ServiceItem from '@/models/ServiceItem';
 import mongoose from 'mongoose';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions';
 import { InventoryManager } from '@/lib/inventoryManager'; 
 
 // --- (1) IMPORT ALL THE NECESSARY FUNCTIONS ---

@@ -25,7 +25,7 @@ import {
 // Ensure these types are imported from your actual model file
 import type { TargetSheetData, SummaryMetrics } from '@/models/TargetSheet'; 
 import { useSession } from 'next-auth/react';
-import { PERMISSIONS, hasPermission } from '@/lib/permissionUtils';
+import { PERMISSIONS, hasPermission } from '@/lib/permissions';
 
 // --- HELPER COMPONENTS (Unchanged) ---
 // ProgressBar and MetricCard components are unchanged...

@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useSession } from 'next-auth/react';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions';
 import { DocumentTextIcon, ChevronLeftIcon, ChevronRightIcon, PencilIcon, TrashIcon, PlusIcon, XMarkIcon, ShoppingBagIcon, CalendarDaysIcon, TruckIcon } from '@heroicons/react/24/outline';
 
 interface ProcurementRecord {

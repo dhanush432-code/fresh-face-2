@@ -4,7 +4,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import connectToDatabase from '@/lib/mongodb';
 import Role from '@/models/role';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions';
 import user from '@/models/user';
 
 export async function GET() {

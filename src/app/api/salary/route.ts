@@ -7,7 +7,7 @@ import mongoose from 'mongoose';
 
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/lib/auth';
-import { PERMISSIONS, hasPermission } from '@/lib/permissionUtils';
+import { PERMISSIONS, hasPermission } from '@/lib/permissions';
 
 // --- Interfaces for Payloads and Responses ---
 

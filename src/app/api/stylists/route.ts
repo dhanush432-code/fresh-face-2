@@ -4,7 +4,7 @@ import dbConnect from '@/lib/dbConnect';
 import Stylist, { IStylist } from '@/models/Stylist';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions';
 
 async function checkPermission(permission: string) {
   const session = await getServerSession(authOptions);

@@ -3,7 +3,7 @@
 
 import { useState, useEffect, useRef, Fragment } from 'react';
 import { useSession } from 'next-auth/react';
-import { hasPermission } from '@/lib/permissionUtils';
+import { hasPermission } from '@/lib/1permissions';
 import { Chart } from 'chart.js/auto';
 import { Toaster, toast } from 'react-hot-toast';
 import { Package, Warehouse, History, X, Search, AlertTriangle, Building, Tag, FileDown } from 'lucide-react';

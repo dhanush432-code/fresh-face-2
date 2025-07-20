@@ -10,7 +10,7 @@ import { differenceInMinutes, startOfDay, endOfDay, startOfMonth, endOfMonth, pa
 // NEW: Import permission tools
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/lib/auth';
-import { PERMISSIONS, hasPermission } from '@/lib/permissionUtils';
+import { PERMISSIONS, hasPermission } from '@/lib/permissions';
 
 const isValidObjectId = (id: string): boolean => mongoose.Types.ObjectId.isValid(id);
 

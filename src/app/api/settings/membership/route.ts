@@ -3,7 +3,7 @@
 import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/lib/auth';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions';
 import connectToDatabase from '@/lib/mongodb';
 import Setting from '@/models/Setting';
 

@@ -5,7 +5,7 @@ import { authOptions } from '@/lib/auth';
 import connectToDatabase from '@/lib/mongodb';
 import User from '@/models/user';
 import Role from '@/models/role';
-import { hasPermission, PERMISSIONS } from '@/lib/permissionUtils';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions';
 
 export async function GET() {
   try {
