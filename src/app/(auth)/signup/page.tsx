@@ -1,7 +1,7 @@
 'use client';
 export const dynamic = 'force-dynamic';
 
-import SignupForm from '@/components/SignupForm';
+import SignupForm from '../../../components/SignupForm';
 
 export default function SignupPage() {
   return (

@@ -4,7 +4,7 @@
 
 import React, { useState } from 'react';
 import { useSession } from 'next-auth/react';
-import { hasPermission, PERMISSIONS } from '@/lib/permissions';
+import { hasPermission, PERMISSIONS } from '../../../../lib/permissions';
 import { BanknotesIcon, CalendarIcon, ClockIcon } from '@heroicons/react/24/outline';
 import DayEndClosingModal from './components/DayEndClosingModal';
 import Link from 'next/link';

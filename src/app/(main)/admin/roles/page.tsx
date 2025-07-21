@@ -3,8 +3,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useSession } from 'next-auth/react';
-import { hasPermission, PERMISSIONS, ALL_PERMISSIONS, PERMISSION_CATEGORIES } from '@/lib/permissions';
-import EditRoleModal from '@/components/EditRoleModal';
+import { hasPermission, PERMISSIONS, ALL_PERMISSIONS, PERMISSION_CATEGORIES } from '../../../../lib/permissions';
+import EditRoleModal from '../../../../components/EditRoleModal';
 import { PencilIcon, TrashIcon } from 'lucide-react';
 
 interface Role {
