@@ -159,17 +159,6 @@ export async function POST(req: Request) {
     await session.commitTransaction();
     console.log("--- TRANSACTION COMMITTED SUCCESSFULLY ---");
 
-    // --- 10. POST-TRANSACTION ACTIONS (like sending emails) ---
-    // if (lowStockProducts.length > 0) {
-    //   // This is outside the transaction, which is good practice for external calls.
-    //   try {
-    //     const thresholdSetting = await Setting.findOne({ key: 'globalLowStockThreshold' }).lean();
-    //     const globalThreshold = thresholdSetting ? parseInt(thresholdSetting.value, 10) : 10;
-    //     sendLowStockAlertEmail(lowStockProducts, globalThreshold);
-    //   } catch (emailError) {
-    //       console.error("Failed to send low stock email post-transaction:", emailError);
-    //   }
-    // }
 
     return NextResponse.json({
       success: true,
