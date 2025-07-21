@@ -9,9 +9,8 @@ import Stylist from '@/models/Stylist';
 import Customer from '@/models/customermodel';
 import LoyaltyTransaction from '@/models/loyaltyTransaction';
 import Setting from '@/models/Setting';
-import Product, { IProduct } from '@/models/Product'; // Import Product model
+import Product, { IProduct } from '@/models/Product'; 
 import { InventoryManager, InventoryUpdate } from '@/lib/inventoryManager';
-import { sendLowStockAlertEmail } from '@/lib/mail';
 
 const MEMBERSHIP_FEE_ITEM_ID = 'MEMBERSHIP_FEE_PRODUCT_ID';
 
@@ -161,16 +160,16 @@ export async function POST(req: Request) {
     console.log("--- TRANSACTION COMMITTED SUCCESSFULLY ---");
 
     // --- 10. POST-TRANSACTION ACTIONS (like sending emails) ---
-    if (lowStockProducts.length > 0) {
-      // This is outside the transaction, which is good practice for external calls.
-      try {
-        const thresholdSetting = await Setting.findOne({ key: 'globalLowStockThreshold' }).lean();
-        const globalThreshold = thresholdSetting ? parseInt(thresholdSetting.value, 10) : 10;
-        sendLowStockAlertEmail(lowStockProducts, globalThreshold);
-      } catch (emailError) {
-          console.error("Failed to send low stock email post-transaction:", emailError);
-      }
-    }
+    // if (lowStockProducts.length > 0) {
+    //   // This is outside the transaction, which is good practice for external calls.
+    //   try {
+    //     const thresholdSetting = await Setting.findOne({ key: 'globalLowStockThreshold' }).lean();
+    //     const globalThreshold = thresholdSetting ? parseInt(thresholdSetting.value, 10) : 10;
+    //     sendLowStockAlertEmail(lowStockProducts, globalThreshold);
+    //   } catch (emailError) {
+    //       console.error("Failed to send low stock email post-transaction:", emailError);
+    //   }
+    // }
 
     return NextResponse.json({
       success: true,
