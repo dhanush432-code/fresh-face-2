@@ -4,7 +4,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { toast } from 'react-toastify';
 import { XMarkIcon, DocumentTextIcon } from '@heroicons/react/24/outline';
 import {useSession } from 'next-auth/react';
-import { hasPermission, PERMISSIONS } from '../../../../lib/permissions';
+import { hasPermission, PERMISSIONS } from '@/lib/permissions';
 
 // --- TYPE DEFINITIONS ---
 interface PettyCashEntry {
